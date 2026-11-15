@@ -37,6 +37,6 @@ The archived financial calculations used the v9.0 functions. The v9.0.1 source c
 
 ## Data and software license
 
-The software is licensed under the MIT License in `LICENSE`. The license does not grant additional rights to Yahoo Finance, FRED or other third-party market data; those inputs retain the providers' terms and attribution. Retrieval metadata are in `data/source_cache/download_manifest.json`.
+The software is licensed under the MIT License in `LICENSE`. The license does not grant additional rights to Yahoo Finance, FRED or other third-party market data; those inputs retain the providers' terms and attribution. Retrieval metadata are in `data/source_cache/download_manifest.json`. CSV line endings are normalized to LF for the public repository, with all numerical observations unchanged. `results/input_checksums.csv` matches these public bytes; `input_checksums_v90_original.csv` preserves the hashes of the original experiment cache.
 
 The authors are Mervenur Sözen, Onur Şeyranlıoğlu and Çağlar Sözen. This repository is a research reproduction resource, not a guarantee of future investment performance.

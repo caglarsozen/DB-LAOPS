@@ -6,5 +6,6 @@
   "source_cleanup": "Seven superseded helper functions and unused alias removed; all active numerical bodies, formals and parameter values checked identical to v9.0. Figure labels and embedded-font rendering improved.",
   "mechanical_checks_passed": 20,
   "entry_point_smoke": "completed; synthetic software fixture only",
-  "empirical_provenance": "The frozen financial result tables are the fully computed v9.0 experiments; no new market rerun claimed for the publication cleanup."
+  "empirical_provenance": "The frozen financial result tables are the fully computed v9.0 experiments; no new market rerun claimed for the publication cleanup.",
+  "publication_csv_line_endings": "LF; numerical observations unchanged. Original cache hashes retained separately."
 }
