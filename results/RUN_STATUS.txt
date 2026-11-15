@@ -1,0 +1,14 @@
+COMPLETED: full empirical numerical components
+Date: 2026-11-15
+Universes: ETFs plus Bitcoin; ETFs only
+12 engine scenarios: 2 universes x (4 costs, uniform context, extra signal lag)
+Simulation: 2016-01-05 to 2025-12-31, 2513 returns
+Evaluation: 2020-01-02 to 2025-12-31, 1508 returns
+Bootstrap: 4999 draws; primary block 20; sensitivities 5 and 60
+324 primary/comparator-metric-block output rows; 72 secondary rows
+Holm primary family: 72; separate secondary family: 48
+9-budget grid per universe; 6 annual past-only choices per universe
+20 software checks passed; final entry-point smoke workflow completed
+Independent Python checks matched headline metrics to better than 1e-10
+Full empirical numerical components were run with the supplied R functions in orchestration scripts. The final db_main entry point was run end-to-end in smoke mode (synthetic fixture); no synthetic observation enters empirical outputs.
+Retrospective evaluation, not a pristine holdout. No general superiority established.

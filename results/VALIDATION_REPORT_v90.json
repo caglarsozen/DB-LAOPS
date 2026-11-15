@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-15",
+  "code_sha256": "7f0c9f6de6a0139e9e0a5ac50f7c024d9a319999d688b31f3ce02e48a975acda",
+  "primary_inference_rows": 324,
+  "secondary_inference_rows": 72,
+  "bootstrap_B": 4999,
+  "mechanical_checks": 20,
+  "scenarios": [
+    {
+      "universe": "main",
+      "cost_bps": 0,
+      "signal_lag": 1,
+      "context": "contextual",
+      "status": "completed"
+    },
+    {
+      "universe": "main",
+      "cost_bps": 5,
+      "signal_lag": 1,
+      "context": "contextual",
+      "status": "completed"
+    },
+    {
+      "universe": "main",
+      "cost_bps": 10,
+      "signal_lag": 1,
+      "context": "contextual",
+      "status": "completed"
+    },
+    {
+      "universe": "main",
+      "cost_bps": 25,
+      "signal_lag": 1,
+      "context": "contextual",
+      "status": "completed"
+    },
+    {
+      "universe": "main",
+      "cost_bps": 10,
+      "signal_lag": 1,
+      "context": "uniform",
+      "status": "completed"
+    },
+    {
+      "universe": "main",
+      "cost_bps": 10,
+      "signal_lag": 2,
+      "context": "contextual",
+      "status": "completed"
+    },
+    {
+      "universe": "no_crypto",
+      "cost_bps": 0,
+      "signal_lag": 1,
+      "context": "contextual",
+      "status": "completed"
+    },
+    {
+      "universe": "no_crypto",
+      "cost_bps": 5,
+      "signal_lag": 1,
+      "context": "contextual",
+      "status": "completed"
+    },
+    {
+      "universe": "no_crypto",
+      "cost_bps": 10,
+      "signal_lag": 1,
+      "context": "contextual",
+      "status": "completed"
+    },
+    {
+      "universe": "no_crypto",
+      "cost_bps": 25,
+      "signal_lag": 1,
+      "context": "contextual",
+      "status": "completed"
+    },
+    {
+      "universe": "no_crypto",
+      "cost_bps": 10,
+      "signal_lag": 1,
+      "context": "uniform",
+      "status": "completed"
+    },
+    {
+      "universe": "no_crypto",
+      "cost_bps": 10,
+      "signal_lag": 2,
+      "context": "contextual",
+      "status": "completed"
+    }
+  ],
+  "software_validation": {
+    "main": {
+      "models_in_fixed_run": 62,
+      "simulation_observations_per_model": 2513,
+      "evaluation_observations": 1508,
+      "summary_max_error_vs_independent_python": 2.4424906541753444e-15,
+      "weights_validated_groups": 155806,
+      "chronology_and_self_financing": "passed"
+    },
+    "no_crypto": {
+      "models_in_fixed_run": 62,
+      "simulation_observations_per_model": 2513,
+      "evaluation_observations": 1508,
+      "summary_max_error_vs_independent_python": 2.0816681711721685e-15,
+      "weights_validated_groups": 155806,
+      "chronology_and_self_financing": "passed"
+    }
+  },
+  "scientific_scope": "Retrospective historical evaluation; no pristine holdout; no general superiority established.",
+  "execution_note": "Full empirical numerical components were run with the supplied R functions in orchestration scripts. The final db_main entry point was run end-to-end in smoke mode (synthetic fixture); no synthetic observation enters empirical outputs."
+}

@@ -1,0 +1,10 @@
+{
+  "release": "9.0.1",
+  "date": "2026-11-15",
+  "code_sha256": "faf3e3c4b5efb39598f196fca95971ab6008394b2d58fcac631d0fd6ac917f41",
+  "numerical_changes": false,
+  "source_cleanup": "Seven superseded helper functions and unused alias removed; all active numerical bodies, formals and parameter values checked identical to v9.0. Figure labels and embedded-font rendering improved.",
+  "mechanical_checks_passed": 20,
+  "entry_point_smoke": "completed; synthetic software fixture only",
+  "empirical_provenance": "The frozen financial result tables are the fully computed v9.0 experiments; no new market rerun claimed for the publication cleanup."
+}

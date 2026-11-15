@@ -1,0 +1,28 @@
+component,value
+Signal lag,1 session; 2-session sensitivity
+Simulation / evaluation,2016--2025 / 2020--2025
+Expert / advice / DB lookbacks,126 / 126 / 126 sessions
+Ordinary / BTC target cap,0.35 / 0.10
+Baseline DD / CVaR budgets,0.30 / 0.026
+Stress tightening / floors,0.04 / 0.004; 0.18 / 0.014
+DD / CVaR / volatility penalties,0.8 / 1.5 / 0.05
+Candidate count / top count,14 / 3
+DB softmax / growth penalty,28 / 0.00035 times stress
+DB band / nominal trade cap,0.015 / 0.06
+TA band / nominal trade cap,0.02 / 0.04
+Context softmax / bandwidth quantile,24 / 0.35
+Trust range / entropy exponent,"[0.05, 0.90] / 2"
+Trust error / stress rates,6 / 0.30
+Backbone / loss-advice rates,10 / 12
+EG-type / additive update rates,8 / 0.80
+Discounted score / softmax rate,0.995 / 4
+Hedge / expert-OGD rate,1 / 0.1 divided by square root of update count
+Mean--variance risk coefficient,10
+CVaR / CDaR risk coefficient,5 / 1
+Risk optimizer window / update,126 sessions / every 5 sessions for LPs
+Trading-cost amortization,21 sessions
+Transaction costs,"0, 5, 10, 25 basis points; primary 10"
+CE risk aversion,"2, 5, 10; primary 5"
+Bootstrap / block lengths,"4,999 / 5, 20, 60; primary 20"
+Primary / secondary test family,72 / 48 hypotheses
+Budget grid,"DD: .25, .30, .35; CVaR: .021, .026, .034"

@@ -1,0 +1,23 @@
+Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+PASS initial loss included in maximum drawdown 
+PASS fractional empirical expected shortfall 
+PASS expected shortfall handles ties 
+PASS box projection agrees with independent QP 
+PASS no-trade accounting charges zero cost 
+PASS buy-and-hold has zero second-period turnover 
+PASS constant-mix rebalancing is charged after drift 
+PASS self financing equation 
+PASS external solvers obey simplex and caps 
+PASS CVaR LP improves on feasible random candidates 
+PASS risk matching solves covariance target 
+PASS circular block index bounds and sample size 
+PASS paired identical-strategy null 
+PASS Sharpe uses excess returns 
+PASS future perturbations cannot change earlier allocations 
+PASS independent target replay reproduces baseline 
+PASS information strictly precedes execution and return 
+PASS drawdown screen can bind independently of CVaR 
+PASS CVaR screen can bind independently of drawdown 
+PASS squared entropy gate has fourth-order local response 

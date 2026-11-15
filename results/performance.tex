@@ -1,0 +1,34 @@
+\begin{table}[htbp]
+\centering\scriptsize
+\caption{Recomputed net performance; retrospective evaluation.}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lllllll}
+\hline
+sample & model & ann return & sharpe & mdd & cvar95 & ce5 \\
+\hline
+main & Balanced SHY MatchDB & 0.0634 & 0.3357 & 0.2492 & 0.0182 & 0.0046 \\
+no crypto & Balanced SHY MatchDB & 0.0591 & 0.3042 & 0.2481 & 0.0180 & 0.0013 \\
+main & DB LAOPS & 0.1243 & 0.7911 & 0.2063 & 0.0188 & 0.0592 \\
+no crypto & DB LAOPS & 0.0964 & 0.6056 & 0.1983 & 0.0182 & 0.0366 \\
+main & DB WalkForward & 0.1335 & 0.8262 & 0.2141 & 0.0196 & 0.0646 \\
+no crypto & DB WalkForward & 0.0859 & 0.5395 & 0.1867 & 0.0176 & 0.0291 \\
+main & Equal SHY MatchDB & 0.1134 & 0.6900 & 0.2295 & 0.0187 & 0.0472 \\
+no crypto & Equal SHY MatchDB & 0.0767 & 0.4703 & 0.1874 & 0.0163 & 0.0216 \\
+main & Hedge Experts & 0.1162 & 0.6923 & 0.2588 & 0.0197 & 0.0477 \\
+no crypto & Hedge Experts & 0.1070 & 0.6244 & 0.2499 & 0.0197 & 0.0389 \\
+main & Mean CDaR & 0.0491 & 0.5309 & 0.0479 & 0.0054 & 0.0164 \\
+no crypto & Mean CDaR & 0.0411 & 0.3328 & 0.0479 & 0.0054 & 0.0089 \\
+main & Mean CVaR & 0.0457 & 0.5003 & 0.0429 & 0.0049 & 0.0139 \\
+no crypto & Mean CVaR & 0.0441 & 0.4521 & 0.0429 & 0.0049 & 0.0123 \\
+main & OGD Experts & 0.1104 & 0.6852 & 0.2446 & 0.0185 & 0.0464 \\
+no crypto & OGD Experts & 0.0972 & 0.5967 & 0.2300 & 0.0180 & 0.0356 \\
+main & QQQ SHY MatchDB & 0.1006 & 0.5690 & 0.2013 & 0.0204 & 0.0314 \\
+no crypto & QQQ SHY MatchDB & 0.0971 & 0.5602 & 0.1941 & 0.0196 & 0.0306 \\
+main & SPY SHY MatchDB & 0.0937 & 0.5126 & 0.2344 & 0.0214 & 0.0232 \\
+no crypto & SPY SHY MatchDB & 0.0908 & 0.5045 & 0.2303 & 0.0207 & 0.0229 \\
+main & TC MeanVariance & 0.1266 & 0.8017 & 0.1739 & 0.0188 & 0.0607 \\
+no crypto & TC MeanVariance & 0.1066 & 0.7038 & 0.1506 & 0.0172 & 0.0475 \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\end{table}

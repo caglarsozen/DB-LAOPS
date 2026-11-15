@@ -1,0 +1,21 @@
+Passed 20 checks
+initial loss included in maximum drawdown
+fractional empirical expected shortfall
+expected shortfall handles ties
+box projection agrees with independent QP
+no-trade accounting charges zero cost
+buy-and-hold has zero second-period turnover
+constant-mix rebalancing is charged after drift
+self financing equation
+external solvers obey simplex and caps
+CVaR LP improves on feasible random candidates
+risk matching solves covariance target
+circular block index bounds and sample size
+paired identical-strategy null
+Sharpe uses excess returns
+future perturbations cannot change earlier allocations
+independent target replay reproduces baseline
+information strictly precedes execution and return
+drawdown screen can bind independently of CVaR
+CVaR screen can bind independently of drawdown
+squared entropy gate has fourth-order local response

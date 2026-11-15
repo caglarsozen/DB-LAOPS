@@ -1,0 +1,25 @@
+R version 4.4.3 (2025-02-28)
+Platform: x86_64-conda-linux-gnu
+Running under: Debian GNU/Linux 13 (trixie)
+
+Matrix products: default
+BLAS/LAPACK: /workspace/scratch/a8f66a9d8996/runtime/r/lib/libopenblasp-r0.3.34.so;  LAPACK version 3.12.0
+
+locale:
+ [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
+ [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   
+ [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          
+[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   
+
+time zone: Europe/Istanbul
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] xts_0.14.3 zoo_1.9-0 
+
+loaded via a namespace (and not attached):
+[1] compiler_4.4.3  curl_8.0.0      quantmod_0.4.29 grid_4.4.3     
+[5] TTR_0.24.4      lpSolve_5.6.23  lattice_0.23-1  quadprog_1.5-8 

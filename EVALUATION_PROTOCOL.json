@@ -1,0 +1,57 @@
+{
+  "prepared": "2026-11-14",
+  "data_through": "2025-12-31",
+  "backtest_start": "2016-01-01",
+  "retrospective_evaluation": [
+    "2020-01-01",
+    "2025-12-31"
+  ],
+  "development_caveat": "2016-2025 was already seen in v8.1; no pristine holdout claimed",
+  "signal_lag_sessions": 1,
+  "cost_bps": [
+    0,
+    5,
+    10,
+    25
+  ],
+  "main_cost_bps": 10,
+  "risk_budget_grid": {
+    "mdd": [
+      0.25,
+      0.3,
+      0.35
+    ],
+    "cvar": [
+      0.021,
+      0.026,
+      0.034
+    ]
+  },
+  "selection": "January; previous two calendar years CE5; signal lag respected; stable tie break",
+  "bootstrap_B": 4999,
+  "block_lengths": [
+    5,
+    20,
+    60
+  ],
+  "primary_block_length": 20,
+  "primary_metric_family": [
+    "sharpe",
+    "log_growth",
+    "ce5",
+    "cvar95"
+  ],
+  "primary_benchmarks": [
+    "QQQ_SHY_MatchDB",
+    "SPY_SHY_MatchDB",
+    "Balanced_SHY_MatchDB",
+    "Equal_SHY_MatchDB",
+    "Hedge_Experts",
+    "OGD_Experts",
+    "TC_MeanVariance",
+    "Mean_CVaR",
+    "Mean_CDaR"
+  ],
+  "multiplicity": "Holm across both universes, all nine comparators, all four primary metrics at L=20",
+  "no_search_for_significance": true
+}

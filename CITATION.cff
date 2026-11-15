@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and this repository when using the code."
+title: "DB-LAOPS reproducible R implementation"
+version: 9.0.1
+date-released: 2026-11-15
+url: "https://github.com/caglarsozen/DB-LAOPS"
+license: MIT
+authors:
+  - family-names: "Sözen"
+    given-names: "Mervenur"
+    orcid: "https://orcid.org/0000-0001-5603-5382"
+  - family-names: "Şeyranlıoğlu"
+    given-names: "Onur"
+    orcid: "https://orcid.org/0000-0002-1105-4034"
+  - family-names: "Sözen"
+    given-names: "Çağlar"
+    orcid: "https://orcid.org/0000-0002-3732-5058"

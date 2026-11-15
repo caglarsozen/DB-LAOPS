@@ -1,0 +1,93 @@
+[
+  {
+    "series": "SPY",
+    "source": "Yahoo Finance chart API",
+    "field": "Adjusted",
+    "n": 3018,
+    "retrieved_utc": "2026-11-13T12:59:38.722914+00:00"
+  },
+  {
+    "series": "QQQ",
+    "source": "Yahoo Finance chart API",
+    "field": "Adjusted",
+    "n": 3018,
+    "retrieved_utc": "2026-11-13T12:59:38.542831+00:00"
+  },
+  {
+    "series": "IWM",
+    "source": "Yahoo Finance chart API",
+    "field": "Adjusted",
+    "n": 3018,
+    "retrieved_utc": "2026-11-13T12:59:38.628934+00:00"
+  },
+  {
+    "series": "EFA",
+    "source": "Yahoo Finance chart API",
+    "field": "Adjusted",
+    "n": 3018,
+    "retrieved_utc": "2026-11-13T12:59:42.809042+00:00"
+  },
+  {
+    "series": "EEM",
+    "source": "Yahoo Finance chart API",
+    "field": "Adjusted",
+    "n": 3018,
+    "retrieved_utc": "2026-11-13T12:59:42.838338+00:00"
+  },
+  {
+    "series": "GLD",
+    "source": "Yahoo Finance chart API",
+    "field": "Adjusted",
+    "n": 3018,
+    "retrieved_utc": "2026-11-13T12:59:42.749442+00:00"
+  },
+  {
+    "series": "TLT",
+    "source": "Yahoo Finance chart API",
+    "field": "Adjusted",
+    "n": 3018,
+    "retrieved_utc": "2026-11-13T12:59:47.342204+00:00"
+  },
+  {
+    "series": "SHY",
+    "source": "Yahoo Finance chart API",
+    "field": "Adjusted",
+    "n": 3018,
+    "retrieved_utc": "2026-11-13T12:59:47.142038+00:00"
+  },
+  {
+    "series": "UUP",
+    "source": "Yahoo Finance chart API",
+    "field": "Adjusted",
+    "n": 3018,
+    "retrieved_utc": "2026-11-13T12:59:47.244119+00:00"
+  },
+  {
+    "series": "BTC",
+    "source": "Yahoo Finance chart API",
+    "field": "Adjusted",
+    "n": 4124,
+    "retrieved_utc": "2026-11-13T12:59:58.562784+00:00"
+  },
+  {
+    "series": "VIX",
+    "source": "Yahoo Finance chart API",
+    "field": "Close",
+    "n": 3130,
+    "retrieved_utc": "2026-11-13T12:59:58.510969+00:00"
+  },
+  {
+    "series": "DGS3MO",
+    "source": "Federal Reserve H.15 via FRED",
+    "field": "annual percent investment-basis yield",
+    "n": 3130,
+    "retrieved_utc": "2026-11-13T13:00:02.723867+00:00"
+  },
+  {
+    "series": "DGS10",
+    "source": "Federal Reserve H.15 via FRED",
+    "field": "annual percent investment-basis yield",
+    "n": 3130,
+    "retrieved_utc": "2026-11-13T13:00:09.411515+00:00"
+  }
+]
