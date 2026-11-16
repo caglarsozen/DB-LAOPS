@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "date": "2026-11-15",
+  "manuscript_revised": false,
+  "public_code_modified": false,
+  "source_commit": "966a032d9f992f287a07923c26912d49eab1f8e1",
+  "source_sha256": "faf3e3c4b5efb39598f196fca95971ab6008394b2d58fcac631d0fd6ac917f41",
+  "core_runs": 12,
+  "replay_scenarios": 12,
+  "equivalence_comparisons": 12,
+  "primary_equivalence_margin_annual_bp": 25,
+  "equivalent_primary": 12,
+  "equivalent_10bp_sensitivity": 12,
+  "largest_absolute_CE_difference_annual_bp": 1.37373301145417,
+  "min_simultaneous_interval_bp": -5.80009878395936,
+  "max_simultaneous_interval_bp": 7.31991074568591,
+  "baseline_metric_cells_vs_archived_cost_tables": 96,
+  "max_baseline_metric_error": 9.992007221626409e-16,
+  "independently_recomputed_CE_cells": 30,
+  "max_CE_error": 5.960509863456309e-15,
+  "max_R_Python_entropy_summary_error": 1.2906342661267445e-15,
+  "rank_certificates_verified": 29904,
+  "max_selected_candidate_drawdown_all_cases": 0.166811627067593,
+  "exact_no_drawdown_returns": 15078,
+  "theory_check_groups": 6,
+  "drawdown_identities": [
+    {
+      "sample": "main",
+      "cost": 0,
+      "n": 2513,
+      "max_error": 0.0
+    },
+    {
+      "sample": "main",
+      "cost": 10,
+      "n": 2513,
+      "max_error": 0.0
+    },
+    {
+      "sample": "main",
+      "cost": 25,
+      "n": 2513,
+      "max_error": 0.0
+    },
+    {
+      "sample": "no_crypto",
+      "cost": 0,
+      "n": 2513,
+      "max_error": 0.0
+    },
+    {
+      "sample": "no_crypto",
+      "cost": 10,
+      "n": 2513,
+      "max_error": 0.0
+    },
+    {
+      "sample": "no_crypto",
+      "cost": 25,
+      "n": 2513,
+      "max_error": 0.0
+    }
+  ],
+  "limitations": [
+    "Exploratory retrospective evidence on previously used data",
+    "Basic paired-block intervals are approximate and conditional on fixed realized strategy rules",
+    "No general outperformance, new regret guarantee, future drawdown guarantee, or mathematical priority established"
+  ]
+}

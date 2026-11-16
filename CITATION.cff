@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "Please cite the manuscript and this repository when using the code."
-title: "DB-LAOPS reproducible R implementation"
-version: 9.0.1
-date-released: 2026-11-15
+title: "Drawdown-Budgeted Learning-Augmented Online Portfolio Selection: Component Activity and Economic Equivalence under Transaction Costs"
+version: 9.1
+date-released: 2026-11-16
 url: "https://github.com/caglarsozen/DB-LAOPS"
 license: MIT
 authors:

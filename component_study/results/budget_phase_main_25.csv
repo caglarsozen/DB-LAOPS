@@ -1,0 +1,4 @@
+"sample","cost_bps","base_cvar","n","min_cvar_admissible","all_minimum_count_met","sufficient_critical_base_dd","rank_sufficient_critical_base_dd","max_dd_of_cvar_admissible"
+"main",25,0.021,1508,2,TRUE,0.219442905397784,0,0.185442905397784
+"main",25,0.026,1508,3,TRUE,0.261674289818542,0,0.227674289818542
+"main",25,0.034,1508,4,TRUE,0.296429890269679,0.215616457946241,0.262429890269679

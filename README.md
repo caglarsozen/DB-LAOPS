@@ -1,42 +1,35 @@
 # DB-LAOPS
 
-Reproducible R implementation accompanying **Drawdown-Budgeted Learning-Augmented Online Portfolio Selection under Market Regime Shifts and Transaction Costs**.
+Reproducible R code for **Drawdown-Budgeted Learning-Augmented Online Portfolio Selection: Component Activity and Economic Equivalence under Transaction Costs**.
 
-Release: **v9.0.1**, 15 November 2026. This publication cleanup retains all active numerical function bodies, formals and parameter values from the computed v9.0 revision. Seven superseded helper definitions were removed and figure labels/fonts were improved. The manuscript contains the full method specification and parameters in its appendices.
+Revision package **v9.1**, 16 November 2026. The allocation engine remains v9.0.1 with unchanged numerical rules. This revision adds component-activity diagnostics, the reduction protocol and CE5 equivalence study.
 
-## Run
+## Run the component study
 
-Use R 4.4 or later. From this repository's root:
+From the repository root, with R 4.4 or later:
 
-```r
-install.packages(c("quantmod", "xts", "zoo", "quadprog", "lpSolve"),
-                 repos = "https://cloud.r-project.org")
-source("DB_LAOPS_v90_MAJOR_REVISION.R")
-result <- db_main("full", root = getwd(), download = FALSE)
-```
+    install.packages(c("quantmod", "xts", "zoo", "quadprog", "lpSolve"))
+    source("RUN_COMPONENT_STUDY.R")
 
-The `data/source_cache` directory contains the frozen inputs used for the archived results. With `download = FALSE`, missing data stop execution. Setting `download = TRUE` downloads missing inputs only; existing cached observations are retained. No real-data run substitutes synthetic data after a retrieval failure.
+The self-contained component_study folder also runs with Rscript component_study/RUN_CONTRIBUTION.R. Two R workers are used by default; set Sys.setenv(DB_LAOPS_CORES=1) to use one. Frozen market data are included. Full mode computes twelve core scenarios (two universes, three costs 0/10/25 bp and contextual/uniform probabilities), then replays the reduced selectors and runs the diagnostics, inference and output checks.
 
-- `full`: two asset universes; 0/5/10/25 bp costs; 4,999 bootstrap draws; block lengths 5/20/60; annual past-only budget selection; extra execution delay; component comparisons.
-- `review`: shorter real-data check with 999 draws and 10 bp costs. Its p-value resolution is insufficient for some 72-test Holm thresholds.
-- `smoke`: synthetic software validation only. These observations cannot be reported as empirical market results.
+R1 removes drawdown screening/penalty and equally weights the selected leading candidates. R2 additionally replaces contextual expert probabilities by uniform probabilities. CVaR screening, other online rules, stress and trading controls remain. The primary annual CE5 equivalence margin is +/-25 bp; +/-10 and +/-50 bp are fixed sensitivities. All twelve comparisons meet the primary and 10-bp sensitivity margins using the reported twelve-comparison-adjusted intervals. This is CE5 equivalence to the full rule, not superiority to external portfolios or equivalence of every risk measure.
 
-Full replication can be lengthy. Completed engine scenarios are cached using the input, settings and source checksums. A changed source file invalidates the previous cache. The final output directory is `outputs_full`; completion is indicated by its `RUN_STATUS.txt`.
+The component_study/results folder contains completed summary results. Core caches and large daily result paths are regenerated locally rather than stored in Git. If daily paths already exist from a full run, set Sys.setenv(DB_LAOPS_VERIFY_ONLY="TRUE") before the same entry point to recompute equivalence, analytical fixtures and output checks without rerunning the market engine. This mode requires the existing daily files; it does not fabricate them.
 
-```r
-source("tests/test_revision.R")
-```
+The local protocol was written before reduction paths were computed, after the historical interval had already informed earlier development. It is not an independent preregistration or untouched holdout. Basic paired-block intervals are approximate and conditional on fixed realized strategy paths; multiplicity adjustment does not remove earlier model-search bias.
 
-## Archived results and scope
+Compact archived DB paths and the published cost table provide validation references. The original research run also checked all 43 returned core rules against the full archive (108,059 daily matches per main-cost universe); its dated record is preserved. Independent external comparators are omitted only during core-cache construction because they do not feed core decisions. No omitted comparator is imputed or reported as computed.
 
-`results/` contains the frozen result tables, software-validation records, input checksums and session information. Simulation covers 5 January 2016 through 31 December 2025. The main retrospective evaluation covers 2 January 2020 through 31 December 2025 (1,508 daily observations). The older design had already examined this historical period, so this is not an untouched holdout.
+## Original comparisons and software checks
 
-The corrected evidence does **not** establish general superiority. At the baseline thresholds, CVaR screening makes the separate drawdown screen redundant throughout the evaluation; the contextual-advice CE5 effect is economically negligible. Cost-aware mean-variance remains competitive. Historical risk budgets do not guarantee future drawdown limits. The manuscript reports adverse and inconclusive comparisons.
+    source("RUN_FULL.R")
+    source("tests/test_revision.R")
 
-The archived financial calculations used the v9.0 functions. The v9.0.1 source cleanup was checked for identical active numerical definitions, passed the 20 mechanical checks again, and was exercised through its synthetic end-to-end workflow. It did not generate a new market experiment or change the reported estimates.
+The full original workflow covers both universes, 0/5/10/25 bp costs, original superiority and component families, annual historical budget selection and extra execution delay. Its archived results remain in results/. The new equivalence study uses separate seeds and comparison families. Additional analytical and output checks run in the component workflow.
 
-## Data and software license
+## Scope and license
 
-The software is licensed under the MIT License in `LICENSE`. The license does not grant additional rights to Yahoo Finance, FRED or other third-party market data; those inputs retain the providers' terms and attribution. Retrieval metadata are in `data/source_cache/download_manifest.json`. CSV line endings are normalized to LF for the public repository, with all numerical observations unchanged. `results/input_checksums.csv` matches these public bytes; `input_checksums_v90_original.csv` preserves the hashes of the original experiment cache.
+Simulation covers 2016--2025; evaluation contains 1,508 daily observations in 2020--2025. General economic superiority is not established. The cost-aware mean-variance comparator remains competitive. Historical screening does not guarantee future drawdown protection. The complete method is specified in the manuscript, independently of Markdown documentation.
 
-The authors are Mervenur Sözen, Onur Şeyranlıoğlu and Çağlar Sözen. This repository is a research reproduction resource, not a guarantee of future investment performance.
+The R software is MIT-licensed. Market data retain their providers' terms. Authors: Mervenur Sözen, Onur Şeyranlıoğlu and Çağlar Sözen.

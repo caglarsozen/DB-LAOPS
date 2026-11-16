@@ -1,0 +1,13 @@
+sample,cost,context,n,max_selected_drawdown,all_rank_certificates
+main,0,context,2492,0.163671681230767,True
+main,0,uniform,2492,0.163671681230767,True
+main,10,context,2492,0.161209887721762,True
+main,10,uniform,2492,0.161209887721762,True
+main,25,context,2492,0.166811627067593,True
+main,25,uniform,2492,0.166811627067593,True
+no_crypto,0,context,2492,0.161209887721762,True
+no_crypto,0,uniform,2492,0.161209887721762,True
+no_crypto,10,context,2492,0.161209887721762,True
+no_crypto,10,uniform,2492,0.161209887721762,True
+no_crypto,25,context,2492,0.161209887721762,True
+no_crypto,25,uniform,2492,0.161209887721762,True

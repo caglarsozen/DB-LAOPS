@@ -1,0 +1,7 @@
+COMPLETED: 12 fixed core scenarios and exact raw-candidate replays.
+2 universes x 3 costs (0,10,25 bp) x 2 contextual probability rules.
+4,999 paired circular-block bootstrap draws; L=20.
+Primary equivalence margin: +/-25 annual CE5 bp; all comparisons retained.
+Exploratory retrospective evidence; no untouched holdout or general superiority claim.
+25-bp equivalence, simultaneous 12-comparison intervals: 12 / 12
+10-bp sensitivity, simultaneous intervals: 12 / 12

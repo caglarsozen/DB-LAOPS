@@ -1,0 +1,7 @@
+"check","n","max_error","passed"
+"Published cost metrics",96,9.99200722162641e-16,TRUE
+"Direct CE5 reconstruction",30,2.15105711021124e-16,TRUE
+"Exact drawdown-removal paths",15078,0,TRUE
+"Rank conditions and fallback guard",29904,0,TRUE
+"Analytical fixture groups",6,0,TRUE
+"CE5 equivalence comparisons",12,0,TRUE

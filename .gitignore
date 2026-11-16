@@ -11,3 +11,10 @@ outputs_review/
 outputs_smoke/
 *.Rcheck/
 *.tar.gz
+
+component_study/cache/
+component_study/logs/
+component_study/results/reduction_returns_*.csv
+component_study/results/drawdown_certificate_*.csv
+component_study/results/entropy_certificate_*.csv
+component_study/results/*.pdf

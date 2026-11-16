@@ -1,0 +1,4 @@
+v9.1 | 16 November 2026
+Allocation engine unchanged. New component diagnostics and equivalence workflow.
+INITIAL_RESEARCH_VALIDATION.json records the completed investigation before manuscript revision.
+Current verification mode recomputes statistics and checks from existing real daily result paths; it is not a fresh market-engine run.

@@ -1,0 +1,7 @@
+"check","cases","max_error","passed"
+"finite_range_entropy_bound",5000,1.10963487284325e-16,TRUE
+"uniform_replication_identity",15000,2.77555756156289e-16,TRUE
+"rank_certificate_random_cases",2106,0,TRUE
+"fallback_counterexample",1,0,TRUE
+"pool_not_necessary_counterexample",1,0,TRUE
+"no_trade_discontinuity_counterexample",1,0,TRUE

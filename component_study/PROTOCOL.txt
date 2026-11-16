@@ -1,0 +1,35 @@
+DB-LAOPS contribution investigation — locked exploratory protocol
+Date: 15 November 2026
+Status: exploratory follow-up after seeing the 2016–2025 results. No untouched holdout or selection-adjusted performance claim is available.
+The submitted manuscript and public GitHub code will remain unchanged during this investigation.
+
+Research question
+Can economic inactivity of the named mechanisms be predicted by explicit decision-level certificates, rather than inferred only from an insignificant backtest?
+
+Analytic tasks
+1. Derive and verify a finite-range bound on entropy-gate activation for softmax of mean daily losses. Separate standard information-theoretic facts from any proposed application.
+2. Derive the effect of uniform expert replication on normalized-entropy confidence, holding the advice portfolio and its loss history fixed.
+3. Find the continuous drawdown-budget region where the drawdown filter and excess penalty are exactly redundant conditional on CVaR, including the minimum-admissible-count fallback.
+
+Fixed empirical tasks
+Use the existing frozen Yahoo/FRED inputs; simulation 2016–2025; evaluation 2020–2025; same one-session signal lag, asset caps, self-financing costs and turnover controls as the public release.
+Universes: ETFs plus Bitcoin; ETFs only.
+Primary cost: 10 bp. Prespecified robustness costs: 0 and 25 bp.
+Reference: published DB-LAOPS.
+Reduction 1: remove the drawdown screen and penalty, retain the original contextual advice and ranking score, use equal weights within the selected top three rather than near-uniform exponential weights.
+Reduction 2: apply Reduction 1 and replace contextual expert probabilities by uniform probabilities throughout its nested advice state. Market stress inputs and other online rules remain; this is not a removal of all learning.
+No parameter grid will be optimized for a significant result. Every prespecified scenario will be retained, including adverse comparisons.
+
+Mechanical validation
+Reconstruct reference core strategy returns independently by running the unaltered public engine with independent external comparator evaluation omitted. Such comparators never feed the core strategy. No omitted comparator will be reported as if computed.
+Compare every reference daily return with the archived real-data result before using cached raw candidate allocations. Stop if max error exceeds 1e-10.
+Replay original selector and self-financing trading from cached raw candidates. Require the same identity before comparing reductions.
+
+Economic-equivalence criterion
+Primary prespecified annual CE5 equivalence margin: ±25 bp. Report sensitivities ±10 and ±50 bp without changing the primary conclusion.
+Use paired circular blocks, length 20, 4,999 draws and seed fixed in code. For a simultaneous descriptive claim across the two reductions and two universes at the primary cost, use Bonferroni-adjusted intervals for four comparisons. Risk and return differences are reported, not suppressed.
+Equivalence of the reductions to the full method is a model-simplification result, not evidence that the full method outperforms external alternatives. Results are conditional on the fixed historical sample and design.
+
+Novelty assessment
+Check primary literature on expert aggregation, transaction costs, formal learning-augmented portfolio selection, entropy gating and drawdown control. Do not call elementary identities new theorems or claim priority from an unsuccessful keyword search.
+Proceed to manuscript revision only if the evidence supports a concrete, clearly bounded contribution; otherwise report what failed and what further evidence is needed.

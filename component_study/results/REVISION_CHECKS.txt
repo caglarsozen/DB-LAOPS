@@ -1,0 +1,9 @@
+PASS: revision output verification on existing computed paths.
+                              check     n    max_error passed
+             Published cost metrics    96 9.992007e-16   TRUE
+          Direct CE5 reconstruction    30 2.151057e-16   TRUE
+       Exact drawdown-removal paths 15078 0.000000e+00   TRUE
+ Rank conditions and fallback guard 29904 0.000000e+00   TRUE
+          Analytical fixture groups     6 0.000000e+00   TRUE
+        CE5 equivalence comparisons    12 0.000000e+00   TRUE
+No general superiority, new-data success or future-loss guarantee is established.

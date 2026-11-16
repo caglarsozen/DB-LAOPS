@@ -1,0 +1,35 @@
+DB-LAOPS katkı araştırması — çalıştırma
+
+Bu paket makalenin gönderim sürümünü değiştirmez. Sabit verilerle keşifsel
+bileşen etkinliği ve ekonomik eşdeğerlik araştırmasını yeniden üretir.
+
+1. ZIP'i bir klasöre açın. İnternet bağlantısıyla yeni finansal veri indirilmez.
+2. RStudio'da çalışma klasörünü bu klasöre ayarlayıp çalıştırın:
+   source("RUN_CONTRIBUTION.R")
+   Alternatif terminal komutu: Rscript RUN_CONTRIBUTION.R
+3. Eksik paket varsa bir kez kurun:
+   install.packages(c("quantmod", "xts", "zoo", "quadprog", "lpSolve"))
+4. Varsayılan iki bağımsız R işi birlikte çalışır. Tek işlem için önce:
+   Sys.setenv(DB_LAOPS_CORES=1)
+5. Sonuçlar results/ klasörüne, çalışma kayıtları logs/ klasörüne yazılır.
+   İlk tam koşu makineye göre birkaç dakika veya daha uzun sürebilir.
+
+Referans motoru değiştirilmemiş v9.0.1 sayısal kurallarını içerir.
+Kaynak: https://github.com/caglarsozen/DB-LAOPS
+Sabit commit: 966a032d9f992f287a07923c26912d49eab1f8e1
+Bağımsız dış karşılaştırıcılar yalnızca önbellek oluştururken hesaplanmaz;
+çekirdek kararlara girmedikleri doğrulanmıştır. Atlanan bir yöntem için
+uydurma getiri üretilmez. 10 bp çekirdek koşuları arşivdeki gerçek getirilerle
+karşılaştırılır; ilk üretimde her evrende 108.059 eşleşme doğrulanmıştır.
+
+İndirgeme 1: drawdown ekranı/cezası kaldırılır, seçilen üç aday eşit ağırlanır.
+İndirgeme 2: buna ek olarak bağlamsal uzman olasılıkları eşitlenir.
+Diğer çevrimiçi kurallar, CVaR, stres ve işlem kontrolleri korunur.
+Bu nedenle sonuç bütün öğrenme yöntemlerinin etkisiz olduğunu göstermez.
+
+Birincil ekonomik eşdeğerlik sınırı yıllık CE5 için +/-25 baz puandır.
+10/50 bp duyarlılık sınırları da raporlanır. 2016–2025 daha önce görüldüğünden
+bu çalışma dokunulmamış bağımsız test veya genel üstünlük kanıtı değildir.
+
+Kaynak ve risk-free serilerinin kullanım koşulları kendi sağlayıcılarına aittir.
+Araştırma kodu MIT lisanslıdır. Bu paket dergiye otomatik gönderim yapmaz.
